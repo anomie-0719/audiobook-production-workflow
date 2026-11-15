@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "purpose": "long_audio_and_complex_scene_testing",
+  "storage_policy": {
+    "repository": "metadata_only",
+    "local_directory": "examples/long-test-materials/local/",
+    "ignored_by_git": true
+  },
+  "materials": [
+    {
+      "id": "alimeeting",
+      "name": "AliMeeting",
+      "source_url": "https://www.openslr.org/119/",
+      "license": "CC BY-SA 4.0",
+      "recommended_audio_mode": "chapter",
+      "expected_duration": "15-30 minutes per session",
+      "complexity": [
+        "multiple speakers",
+        "overlap",
+        "long audio",
+        "low confidence alignment"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "wenetspeech",
+      "name": "WenetSpeech",
+      "source_url": "https://www.openslr.org/121/",
+      "project_url": "https://github.com/wenet-e2e/WenetSpeech",
+      "license": "CC BY 4.0",
+      "recommended_audio_mode": "chapter",
+      "preferred_domains": ["audiobook", "drama"],
+      "complexity": [
+        "real-world recording",
+        "background noise",
+        "style changes",
+        "speaker changes"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "librivox",
+      "name": "LibriVox",
+      "source_url": "https://librivox.org/?lang=en",
+      "license": "verify per work and recording",
+      "recommended_audio_mode": "chapter",
+      "complexity": [
+        "long narration",
+        "chapter-level alignment",
+        "continuous matching"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "magicdata-mandarin",
+      "name": "MAGICDATA Mandarin Chinese Read Speech Corpus",
+      "source_url": "https://www.openslr.org/68/",
+      "license": "CC BY-NC-ND 4.0",
+      "recommended_audio_mode": "segment",
+      "complexity": [
+        "clean Mandarin baseline",
+        "text normalization",
+        "short-file batch alignment",
+        "regression testing"
+      ],
+      "priority": 4
+    }
+  ]
+}
