@@ -1,0 +1,43 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/
+.job_data/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+
+# Model caches
+.cache/
+hf_cache/
+
+# Local media and generated exports
+audio/raw/
+audio/processed/
+exports/
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# Public smoke-test fixture
+!examples/test-materials/audio/
+!examples/test-materials/audio/*.wav
+
+# Downloaded long-test datasets stay local
+examples/long-test-materials/local/
+
+# Local secrets and platform state
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# venv
+.venv/
+# logs
+install*.log
+st.out
+st.err
